@@ -14,11 +14,11 @@ header {
 }
 
 /* AQUÍ: Cada estudiante debe agregar sus estilos para su tarjeta y cambios de color global */
-#contenedor-destacados {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
+#contenedor-destacados { 
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 20px;
 }
 
 .card {
