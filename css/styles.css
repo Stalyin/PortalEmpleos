@@ -1,26 +1,137 @@
-/* css/styles.css */
-body { 
-    font-family: sans-serif; 
-    line-height: 1.6; 
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
 }
 
-header { 
-    background: #333; 
-    color: white; 
-    padding: 1rem; 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #0f172a;
+  line-height: 1.6;
 }
 
-/* AQUÍ: Cada estudiante debe agregar sus estilos para su tarjeta y cambios de color global */
-#contenedor-destacados { 
-    display: flex; 
-    gap: 20px; 
-    padding: 20px;
+header {
+  background: linear-gradient(135deg, #061a40, #0f2f63);
+  color: white;
+  padding: 1.2rem 6%;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+main {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 1.2rem;
+}
+
+main h2,
+main > p {
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+main > p {
+  color: #475569;
+  margin-bottom: 2rem;
+}
+
+.destacados-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
 }
 
 .card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
+  background: white;
+  border-radius: 18px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  border-bottom: 5px solid #2563eb;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #1d4ed8;
+}
+
+footer {
+  background: #061a40;
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 3rem;
+}
+
+/* Diseño para hojas de vida */
+.cv-page {
+  max-width: 850px;
+  margin: 2.5rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.cv-page h2 {
+  color: #1d4ed8;
+  border-left: 5px solid #2563eb;
+  padding-left: 0.8rem;
+  text-align: left;
+}
+
+.cv-page ul {
+  padding-left: 1.2rem;
+}
+
+.cv-page li {
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 900px) {
+  .destacados-container {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
 }
