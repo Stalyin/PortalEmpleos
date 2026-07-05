@@ -1,1 +1,150 @@
-<h1>Hoja de Vida 3</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Bryan</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .cv-hero {
+            background: linear-gradient(135deg, #2c3e50, #4a6785);
+            color: white;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+        }
+        .cv-avatar {
+            width: 84px;
+            height: 84px;
+            margin: 0 auto 1rem;
+            border-radius: 50%;
+            background: #ffffff;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        }
+        .cv-hero h2 {
+            margin: 0 0 0.25rem;
+            font-size: 2rem;
+        }
+        .cv-hero p {
+            margin: 0;
+            color: #dbe4f0;
+        }
+        .cv-body {
+            max-width: 700px;
+            margin: -1.5rem auto 0;
+            padding: 0 1.5rem 1.5rem;
+        }
+        .cv-card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+            padding: 1.5rem;
+        }
+        .cv-section {
+            margin-bottom: 1.5rem;
+        }
+        .cv-section:last-child {
+            margin-bottom: 0;
+        }
+        .cv-section h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-left: 4px solid #2c3e50;
+            padding-left: 0.6rem;
+            margin-bottom: 0.6rem;
+            color: #2c3e50;
+        }
+        .cv-section p {
+            margin: 0;
+            color: #333;
+        }
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .skill-tags li {
+            background: #e2e8f0;
+            color: #2c3e50;
+            padding: 0.3rem 0.9rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            transition: background 0.2s ease;
+        }
+        .skill-tags li:hover {
+            background: #2c3e50;
+            color: #ffffff;
+        }
+        .contact-info a {
+            color: #2c3e50;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hoja de Vida</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="cv1.html">Candidato 1</a></li>
+                <li><a href="cv2.html">Candidato 2</a></li>
+                <li><a href="cv3.html">Candidato 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cv-hero">
+        <div class="cv-avatar">B</div>
+        <h2>Bryan</h2>
+        <p>Estudiante de Desarrollo de Software</p>
+    </section>
+
+    <main class="cv-body">
+        <div class="cv-card">
+            <div class="cv-section">
+                <h3>Perfil</h3>
+                <p>Estudiante enfocado en desarrollo web, con interés en construir interfaces claras y en el trabajo colaborativo usando control de versiones (Git/GitHub).</p>
+            </div>
+
+            <div class="cv-section">
+                <h3>Habilidades</h3>
+                <ul class="skill-tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>Trabajo en equipo</li>
+                </ul>
+            </div>
+
+            <div class="cv-section">
+                <h3>Formación</h3>
+                <p>Estudiante de Desarrollo de Software, IDOCV.</p>
+            </div>
+
+            <div class="cv-section contact-info">
+                <h3>Contacto</h3>
+                <p>Email: <a href="mailto:bryanmoranchandi@gmail.com">bryanmoranchandi@gmail.com</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portal de Empleo - Contacto: info@universidad.edu</p>
+    </footer>
+</body>
+</html>
