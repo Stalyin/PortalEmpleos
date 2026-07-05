@@ -1,16 +1,16 @@
 /* css/styles.css */
-body { 
-    font-family: sans-serif; 
-    line-height: 1.6; 
-    margin: 0;
-    padding: 0;
-    background: #7cd1b6;
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: lightblue;
 }
 
-header { 
-    background: #333; 
-    color: white; 
-    padding: 1rem; 
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
 }
 
 /* AQUÍ: Cada estudiante debe agregar sus estilos para su tarjeta y cambios de color global */
@@ -22,7 +22,7 @@ header {
 }
 
 .card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
 }
